@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.tictactoe.StartActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/gameicon" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/imageView"
+        android:textSize="20sp"
+        android:text="Size Of The Board :" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_alignLeft="@+id/text">
+
+        <RadioButton
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="20sp"
+            android:text="3 X 3"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt1"
+            android:layout_marginTop="20sp"
+            android:text="4 X 4"
+            android:layout_alignLeft="@+id/text"/>
+
+        <RadioButton
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt2"
+            android:layout_marginTop="20sp"
+            android:text="5 X 5"
+            android:layout_alignLeft="@+id/text"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio"
+        android:layout_alignLeft="@+id/text"
+        android:layout_marginTop="30sp"
+        android:text="START GAME"/>
+
+</RelativeLayout>
